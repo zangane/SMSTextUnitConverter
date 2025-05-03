@@ -1,30 +1,33 @@
-# مبدل متن پیامک به پارت های پیامکی (SMS Text Unit Converter)
+# SMS Text Unit Converter
 
-این ابزار ساده با PHP نوشته شده و به شما کمک می کند تعداد پارت های پیامک را بر اساس محتوای متن، نوع انکدینگ (GSM یا Unicode)، و تعداد کاراکترها محاسبه کنید. این ابزار مناسب کاربران سامانه های پیامکی، اپراتورها، و توسعه دهندگان است.
-
----
-
-## ویژگی ها
-
-- تشخیص خودکار نوع پیامک (GSM 7bit یا Unicode)
-- محاسبه تعداد کاراکترها
-- محاسبه تعداد پارت های موردنیاز برای ارسال
-- هشدار در مورد استفاده از کاراکترهای خاص (در نسخه های پیشرفته)
-- کاملاً نوشته شده با PHP خام (بدون فریمورک)
-- مناسب برای استفاده در سایت ها، پنل های پیامک، یا به صورت آفلاین
+A simple, lightweight PHP-based tool that helps calculate the number of SMS parts required for a given message based on character count and encoding type (GSM 7-bit or Unicode). This is especially useful for SMS gateway developers, providers, or anyone working with text messaging systems.
 
 ---
 
-## پیش نمایش رابط کاربری
+## Features
 
-فرم ساده برای وارد کردن متن پیامک و دکمه محاسبه  
-نمایش: تعداد کاراکتر، نوع پیامک، و تعداد پارت
+- Detects message encoding type automatically (GSM 7-bit or Unicode)
+- Calculates total character count
+- Calculates the number of SMS segments required
+- Pure PHP — no frameworks required
+- Easy to integrate into any website or SMS platform
 
 ---
 
-## نحوه اجرا
+## Demo UI Overview
 
-1. این پروژه را کلون یا دانلود کنید:
+- Textarea input for the message
+- "Calculate" button
+- Output showing:
+  - Total characters
+  - Encoding type
+  - Number of required SMS parts
+
+---
+
+## How to Use
+
+1. Clone or download the repository:
 
 ```bash
 git clone https://github.com/zangane/SMSTextUnitConverter.git
